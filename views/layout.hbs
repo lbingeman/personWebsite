@@ -4,22 +4,18 @@
 		<title>Laura Bingeman</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="/stylesheets/bootstrap.css">
-	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-	  	<script src="/javascripts/bootstrap.js"></script>  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	  	<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	  	<style type="text/css">
-	  		html {
-	  			background-color: white;
-	  		}
 	  		.navbar {
 	  			background-color: lightblue;
 	  		}
 	  		.jumbotron {
 	  			color:black;
 	  			background-color: lightblue; 
-	  			margin-bottom: 0px;
-	  			margin-top:0px;
 	  			text-align: center;
 	  		}
 	  		.navbar-default {
@@ -34,27 +30,21 @@
 	  			border-color: transparent;
 	  			color: white !important;
 	  		}
-	  		body {
-	  			padding-top: 0px;
-	  			margin-left: 10%;
-	  			margin-right: 10%;
-	  			/*background-color: white;*/
-	  		}
 	  	</style>
 	</head>
-	<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+	<body id="top" data-spy="scroll" data-target=".navbar-fixed-top" data-offset="60">
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="#top">Laura Bingeman</a>
 				</div>
-				<div class="collapse navbar-collapse" id="navBar">
-					<ul class="nav  navbar-nav navbar-right">
+				<div class="collapse navbar-collapse" id="myNavBar">
+					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#about">About</a></li>
 						<li><a href="#education">Education</a></li>
 						<li><a href="#technicalExperience">Technical Experience</a></li>
@@ -64,13 +54,12 @@
 				</div>
 			</div>
 		</nav>
-		<div class="jumbotron text-center">
-			<div class="container-fluid">
-				<h1>Laura Bingeman</h1>
-				<p>Systems Design Engineering, University of Waterloo</p>
-			</div>
+		
+		<div class="jumbotron">
+			<h1>Laura Bingeman</h1>
+			<p>Systems Design Engineering, University of Waterloo</p>
 		</div>
-		<div class="container-fluid">
+		{{!-- <div class="container">
 			<div id="about">
 			</div>
 			<div id="education">
@@ -81,7 +70,7 @@
 			</div>
 			<div id="contact">
 			</div>
-		</div>
+		</div> --}}
 	</body>
 </html>
 
